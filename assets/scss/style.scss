@@ -1,0 +1,36 @@
+/* 
+
+Theme Name: Aviso 2019	
+Theme URI: NA
+Author: Jeremy Kron
+Author URI: https://www.jeremykron.com/
+Description: Custom SASS Based Theme 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: none
+Text Domain:
+
+/*# sourceMappingURL=style.css.map */
+
+/*  MAIN SASS FILE
+=================================================================== /// */
+
+// Helpers
+@import "helpers/_variables";
+@import "helpers/_colors";
+@import "helpers/_fonts";
+
+// Layout
+@import "layout/_grid";
+@import "layout/_html";
+@import "layout/_forms";
+@import "layout/_base";
+@import "layout/_header";
+@import "layout/_footer";
+
+//Pages
+@import "pages/_page";
+
+//Views
+@import "views/_views";

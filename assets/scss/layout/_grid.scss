@@ -1,0 +1,77 @@
+/* 
+:::::::::: GRID LAYOUT :::::::::
+Written by: Jeremy Kron
+Date: September 16, 2015
+
+- Make sure headings and other elements that span the full width before or after a multi-column section are located OUTSIDE the "row" in your html. Otherwise padding corrections for alignment on first and last child columns will not work properly (also noted in _base).
+
+::::::::: 
+*/
+
+*{box-sizing:border-box;}
+.container{
+    width:100%;
+    max-width:$max-laptop;
+		margin:0 auto;
+		clear:both;
+    overflow:hidden;
+}
+.row{overflow:hidden;}
+.row:before, .row:after {
+    clear:both;
+}
+[class*='col-']{
+    float:left;
+    min-height:1px;
+    width:100%;
+}
+
+@media(min-width:$min-tablet) {
+.col-1{width:8.3333333333333333%}
+.col-2{width:16.66666666666666667%}
+}
+
+@media(min-width:$min-tablet) {
+.col-3{width:25%}
+.col-4{width:33.33333333333333333%;}
+.col-5{width:41.66666666666666667%}
+.col-6{width:50%;}
+.col-7{width:58.33333333333333333%}
+.col-8{width:66.66666666666666667%}
+.col-9{width:75%}
+.col-10{width:83.33333333333333333%}
+.col-11{width:91.66666666666666667%}
+.col-12{width:100%}
+.col-8 + .col-4{width:33.33333333333333333%}
+.col-9{width:75%;}
+.col-9 + .col-3{width:25%}
+}
+
+/*@media(min-width:$min-tablet){
+    .col-1 p, .col-2 p{
+        font-size:$font-sm;
+    }
+}*/
+
+/*
+[class*='col-'] img{
+    margin:{
+        top:0;
+        right:1px;
+        bottom:0;
+        left:1px;
+    }
+    @media(max-width:$max-phone){
+        margin:{
+            top:1px;
+            right:0;
+            bottom:1px;
+            left:0;
+        }    
+    }
+}
+.col-12 img{
+    padding:0;
+    margin:0;
+}
+*/

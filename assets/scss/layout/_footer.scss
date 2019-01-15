@@ -1,0 +1,19 @@
+footer{
+	padding:1rem;
+	background:$dark-grey;
+	p{
+		color:$light-grey;
+		font-size:0.8rem;
+		line-height:1rem;
+		margin: 1rem 0;
+	}
+	p.copyright{
+		text-align: center;
+	}
+	a:link, a:active, a:visited, a:hover{
+		color:$light-grey;
+	}
+	a:hover{
+		text-decoration: underline;
+	}
+}

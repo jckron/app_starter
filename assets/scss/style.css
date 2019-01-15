@@ -1,0 +1,410 @@
+/* 
+
+Theme Name: Aviso 2019	
+Theme URI: NA
+Author: Jeremy Kron
+Author URI: https://www.jeremykron.com/
+Description: Custom SASS Based Theme 
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: none
+Text Domain:
+
+/*# sourceMappingURL=style.css.map */
+/*  MAIN SASS FILE
+=================================================================== /// */
+/* 
+:::::::::: VARIABLES :::::::::
+*/
+/* breakpoints */
+/* 
+:::::::::: COLORS :::::::::
+*/
+/* ___ theme ___ */
+@import url("https://use.typekit.net/wuk4xvt.css");
+.black {
+  color: #000000 !important; }
+
+.white {
+  color: #FFFFFF !important; }
+
+.text-1 {
+  color: #4C5761 !important; }
+
+.text-2 {
+  color: #4C5761 !important; }
+
+.text-3 {
+  color: #E2EFF2; }
+
+.background-black {
+  background-color: #000000;
+  color: #FFFFFF; }
+
+.background-white {
+  background-color: #FFFFFF;
+  color: #4C5761; }
+
+.background-light-grey {
+  background-color: #DADADA;
+  color: #4C5761; }
+
+.background-mid-grey {
+  background-color: #9A9A9A;
+  color: #232E37; }
+
+.background-dark-grey {
+  background-color: #505050;
+  color: #FFFFFF; }
+
+.background-A1 {
+  background-color: #2A5478;
+  color: #E2EFF2; }
+
+.background-A2 {
+  background-color: #C3B753;
+  color: #232E37; }
+
+.background-A3 {
+  background-color: #802E56;
+  color: #E2EFF2; }
+
+.background-B1 {
+  background-color: #B1DCF1;
+  color: #232E37; }
+
+.background-B2 {
+  background-color: #E2EFF2;
+  color: #4C5761; }
+
+.background-B3 {
+  background-color: #DCCED5;
+  color: #4C5761; }
+
+/* ___ system ___ */
+/*$sys_green:#2caa0f;*/
+/* families */
+/*@import url('https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700');
+$body-font:'Quicksand',sans-serif;*/
+/* 
+:::::::::: GRID LAYOUT :::::::::
+Written by: Jeremy Kron
+Date: September 16, 2015
+
+- Make sure headings and other elements that span the full width before or after a multi-column section are located OUTSIDE the "row" in your html. Otherwise padding corrections for alignment on first and last child columns will not work properly (also noted in _base).
+
+::::::::: 
+*/
+* {
+  box-sizing: border-box; }
+
+.container {
+  width: 100%;
+  max-width: 1023px;
+  margin: 0 auto;
+  clear: both;
+  overflow: hidden; }
+
+.row {
+  overflow: hidden; }
+
+.row:before, .row:after {
+  clear: both; }
+
+[class*='col-'] {
+  float: left;
+  min-height: 1px;
+  width: 100%; }
+
+@media (min-width: 960px) {
+  .col-1 {
+    width: 8.3333333333333333%; }
+
+  .col-2 {
+    width: 16.66666666666666667%; } }
+@media (min-width: 960px) {
+  .col-3 {
+    width: 25%; }
+
+  .col-4 {
+    width: 33.33333333333333333%; }
+
+  .col-5 {
+    width: 41.66666666666666667%; }
+
+  .col-6 {
+    width: 50%; }
+
+  .col-7 {
+    width: 58.33333333333333333%; }
+
+  .col-8 {
+    width: 66.66666666666666667%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-10 {
+    width: 83.33333333333333333%; }
+
+  .col-11 {
+    width: 91.66666666666666667%; }
+
+  .col-12 {
+    width: 100%; }
+
+  .col-8 + .col-4 {
+    width: 33.33333333333333333%; }
+
+  .col-9 {
+    width: 75%; }
+
+  .col-9 + .col-3 {
+    width: 25%; } }
+/*@media(min-width:$min-tablet){
+    .col-1 p, .col-2 p{
+        font-size:$font-sm;
+    }
+}*/
+/*
+[class*='col-'] img{
+    margin:{
+        top:0;
+        right:1px;
+        bottom:0;
+        left:1px;
+    }
+    @media(max-width:$max-phone){
+        margin:{
+            top:1px;
+            right:0;
+            bottom:1px;
+            left:0;
+        }    
+    }
+}
+.col-12 img{
+    padding:0;
+    margin:0;
+}
+*/
+body {
+  font-size: 1rem; }
+
+h1, h2, h3, h4, h5, h6 {
+  margin: 0 0;
+  padding: 0 0; }
+
+h1 {
+  font-size: 3rem;
+  line-height: 3.2rem;
+  margin-bottom: 2rem; }
+
+h2 {
+  font-size: 2rem;
+  line-height: 2.2rem;
+  margin-bottom: 2rem; }
+
+h3 {
+  font-size: 1.5rem;
+  line-height: 1.65rem;
+  margin-bottom: 1.25rem; }
+
+h4 {
+  font-size: 1.2rem;
+  line-height: 1.3rem;
+  margin-bottom: 1rem; }
+
+h5 {
+  font-size: 1rem;
+  line-height: 1.1rem; }
+
+h6 {
+  font-size: 0.8rem;
+  line-height: 0.9rem; }
+
+p {
+  margin: 2rem auto;
+  font-size: 1.2rem;
+  line-height: 2rem; }
+
+ul, ol {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 0 0 2rem 2rem;
+  padding: 0 0; }
+
+a:link, a:active, a:visited {
+  color: #802E56;
+  text-decoration: none; }
+
+a:hover {
+  color: #5a213d; }
+
+blockquote {
+  font-size: 1.2rem;
+  line-height: 2rem;
+  margin: 2rem 4rem 4rem;
+  background: #DADADA;
+  padding: 1rem; }
+  blockquote p {
+    margin: 0 0 1rem; }
+  blockquote p:first-child {
+    margin: 0 0 2rem !important;
+    font-size: 1.2rem !important;
+    line-height: 2rem !important;
+    color: #4C5761 !important; }
+  @media (max-width: 1024px) {
+    blockquote {
+      margin: 2rem 0;
+      font-size: 1.25rem;
+      line-height: 1.5rem; } }
+
+@media (min-width: 1024px) {
+  :hover {
+    -webkit-transition: all .15s ease-in-out;
+    -moz-transition: all .15s ease-in-out;
+    -ms-transition: all .15s ease-in-out;
+    -o-transition: all .15s ease-in-out;
+    transition: all .15s ease-in-out; } }
+
+.nobr {
+  white-space: nowrap; }
+  @media (max-width: 419px) {
+    .nobr {
+      white-space: unset; } }
+
+.hidden {
+  display: none; }
+
+.text-center {
+  text-align: center; }
+
+.font-normal {
+  font-weight: normal; }
+
+/* 
+:::::::::: FORM STYLES :::::::::
+*/
+button {
+  border: none;
+  background: #C3B753;
+  color: #FFFFFF;
+  border-radius: 6px;
+  padding: 0 0; }
+  button img {
+    max-width: 36px;
+    max-height: 36px; }
+
+button.form-button {
+  margin: 24px 0;
+  padding: 12px 24px;
+  font-size: 18px;
+  font-weight: 700;
+  float: right; }
+
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"],
+select,
+textarea {
+  display: block;
+  margin: 6px auto;
+  width: 100%;
+  border: none;
+  font-family: "jaf-domus", sans-serif;
+  font-size: 1rem;
+  border: none;
+  padding: 8px; }
+
+/* Braintree Payment */
+.sconce-sample {
+  border: #007916 1px solid;
+  padding: 12px; }
+  .sconce-sample p {
+    margin: 0 0; }
+
+/* 
+:::::::::: BASE STYLES :::::::::
+*/
+body {
+  background: #505050;
+  margin: 0 0;
+  font-family: "jaf-domus", sans-serif;
+  font-weight: 400;
+  color: #DADADA; }
+
+p, ul, ol {
+  font-weight: 400; }
+
+img {
+  width: 100%;
+  display: block; }
+
+footer {
+  padding: 1rem;
+  background: #505050; }
+  footer p {
+    color: #DADADA;
+    font-size: 0.8rem;
+    line-height: 1rem;
+    margin: 1rem 0; }
+  footer p.copyright {
+    text-align: center; }
+  footer a:link, footer a:active, footer a:visited, footer a:hover {
+    color: #DADADA; }
+  footer a:hover {
+    text-decoration: underline; }
+
+/* 
+:::::::::: BASIC PAGE STYLES :::::::::
+*/
+.page-wrapper {
+  background: #DADADA;
+  color: #4C5761;
+  padding-bottom: 48px; }
+
+.cards .card {
+  padding: 24px 12px 6px; }
+  .cards .card img {
+    box-shadow: #505050 2px 2px 3px; }
+
+.container-overview {
+  padding: 48px 0 24px;
+  display: flex;
+  align-content: flex-start; }
+  @media (max-width: 959px) {
+    .container-overview {
+      display: block; } }
+
+.card_overview {
+  padding: 24px; }
+  .card_overview h3 {
+    color: #232E37; }
+
+.card_preview {
+  background: #505050 url("../../assets/img/7x7_grid.png") top left repeat;
+  padding: 0 24px 24px; }
+  .card_preview iframe {
+    border: none;
+    width: 100%;
+    height: 100%; }
+
+/* 
+:::::::::: Views :::::::::
+*/
+.view {
+  align-content: center;
+  display: none;
+  clear: both; }
+  .view .back {
+    background: #cdcdcd;
+    color: #DADADA;
+    font-size: 36px;
+    padding: 6px 8px 8px;
+    border-bottom-left-radius: 4px;
+    border-top-left-radius: 4px; }
+  .view .view_block {
+    padding: 12px; }

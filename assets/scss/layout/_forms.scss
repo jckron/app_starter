@@ -1,0 +1,44 @@
+/* 
+:::::::::: FORM STYLES :::::::::
+*/
+button{
+	border:none;
+	background:$theme-A2;
+	color:$white;
+	border-radius:6px;
+	padding:0 0;
+	img{
+		max-width:36px;
+		max-height:36px;
+	}
+}
+button.form-button{
+	margin: 24px 0;
+	padding: 12px 24px;
+	font-size: 18px;
+	font-weight: 700;
+	float: right;
+}
+input[type="text"],
+input[type="email"],
+input[type="phone"],
+input[type="password"],
+select,
+textarea{
+	display: block;
+	margin: 6px auto;
+	width: 100%;
+	border:none;
+	font-family: $body-font;
+	font-size: 1rem;
+	border:none;
+	padding:8px;
+}
+/* Braintree Payment */
+.sconce-sample{
+	border: #007916 1px solid;
+	padding:12px;
+	p{
+		margin: 0 0;
+	}
+}

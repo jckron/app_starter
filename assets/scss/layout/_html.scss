@@ -1,0 +1,101 @@
+body{
+	font-size: 1rem;
+}
+h1,h2,h3,h4,h5,h6{
+	margin:0 0;
+	padding: 0 0;
+}
+h1{
+	font-size:3rem;
+	line-height:3.2rem;
+	margin-bottom: 2rem;
+}
+h2{
+	font-size:2rem;
+	line-height:2.2rem;
+	margin-bottom: 2rem;
+}
+h3{
+	font-size:1.5rem;
+	line-height:1.65rem;
+	margin-bottom: 1.25rem;
+}
+h4{
+	font-size:1.2rem;
+	line-height:1.3rem;
+	margin-bottom: 1rem;
+}
+h5{
+	font-size:1rem;
+	line-height:1.1rem;
+}
+h6{
+	font-size:0.8rem;
+	line-height:0.9rem;
+}
+p{
+	margin:2rem auto;
+	font-size: 1.2rem;
+	line-height: 2rem;
+}
+ul,ol{
+	font-size: 1.2rem;
+	line-height: 2rem;
+	margin:0 0 2rem 2rem;
+	padding:0 0;
+}
+
+a:link, a:active, a:visited{
+	color:$theme-A3;
+	text-decoration: none;
+}
+a:hover{
+	color:darken($theme-A3, 10%);	
+}
+
+blockquote{
+	font-size: 1.2rem;
+	line-height:2rem;
+	margin:2rem 4rem 4rem;
+	background:$light-grey;
+	padding:1rem;
+	p{
+		margin:0 0 1rem;
+	}
+	p:first-child{
+		margin:0 0 2rem !important;
+		font-size: 1.2rem !important;
+		line-height:2rem !important;
+		color:$text-1 !important;
+	}
+	@media(max-width:$min-laptop){
+		margin:2rem 0;
+		font-size:1.25rem;
+		line-height:1.5rem;
+	}
+}
+
+:hover{
+	@media(min-width:$min-laptop){
+	-webkit-transition: all .15s ease-in-out;
+	-moz-transition: all .15s ease-in-out;
+	-ms-transition: all .15s ease-in-out;
+	-o-transition: all .15s ease-in-out;
+	transition: all .15s ease-in-out;
+	}
+}
+.nobr{
+    white-space:nowrap;
+    @media(max-width:$max-phone){
+        white-space:unset;
+    }
+}
+.hidden{
+	display: none;
+}
+.text-center{
+	text-align: center;
+}
+.font-normal{
+	font-weight: normal;
+}

@@ -1,0 +1,14 @@
+/* 
+:::::::::: PLACEHOLDERS :::::::::
+*/
+
+/* border treatments */
+%roundCorners{
+	border-radius:12px;
+}
+
+/* filters */
+%bw{
+	-webkit-filter:grayscale(100%);
+	filter:grayscale(100%);
+}

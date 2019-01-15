@@ -1,0 +1,74 @@
+/* 
+:::::::::: COLORS :::::::::
+*/
+
+/* ___ theme ___ */
+$black:#000000;
+$white:#FFFFFF;
+$light-grey:#DADADA;
+$mid-grey:#9A9A9A;
+$dark-grey:#505050;
+$text-1:#4C5761;
+$text-2:#232E37;
+$theme-A1:#2A5478;
+$theme-A2:#C3B753;
+$theme-A3:#802E56;
+$theme-B1:#B1DCF1;
+$theme-B2:#E2EFF2;
+$theme-B3:#DCCED5;
+
+.black{color: $black !important;}
+.white{color: $white !important;}
+.text-1{color: $text-1 !important;}
+.text-2{color: $text-1 !important;}
+.text-3{color: $theme-B2;}
+
+.background-black{
+	background-color:$black;
+	color:$white;
+}
+.background-white{
+	background-color:$white;
+	color:$text-1;
+}
+.background-light-grey{
+	background-color:$light-grey;
+	color:$text-1;
+}
+.background-mid-grey{
+	background-color:$mid-grey;
+	color:$text-2;
+}
+.background-dark-grey{
+	background-color:$dark-grey;
+	color:$white;
+}
+.background-A1{
+	background-color:$theme-A1;
+	color:$theme-B2;
+}
+.background-A2{
+	background-color:$theme-A2;
+	color:$text-2;
+}
+.background-A3{
+	background-color:$theme-A3;
+	color:$theme-B2;
+}
+.background-B1{
+	background-color:$theme-B1;
+	color:$text-2;
+}
+.background-B2{
+	background-color:$theme-B2;
+	color:$text-1;
+}
+.background-B3{
+	background-color:$theme-B3;
+	color:$text-1;
+}
+
+/* ___ system ___ */
+/*$sys_green:#2caa0f;*/
+$sys_green:#a7ff51;
+$sys_gold:#caa95a;

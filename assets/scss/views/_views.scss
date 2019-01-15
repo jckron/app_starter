@@ -1,0 +1,19 @@
+/* 
+:::::::::: Views :::::::::
+*/
+.view{
+	align-content: center;
+	display: none;
+	clear:both;
+	.back{
+		background:lighten($mid-grey, 20%);
+		color:$light-grey;
+		font-size:36px;
+		padding:6px 8px 8px;
+		border-bottom-left-radius: 4px;
+		border-top-left-radius: 4px;
+	}
+	.view_block{
+		padding:12px;
+	}
+}
